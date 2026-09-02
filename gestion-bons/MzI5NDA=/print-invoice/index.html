@@ -4,7 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Print Invoice</title>
-	<style>html,body{height:100%;margin:0} .viewer{position:relative;height:100vh} .pdf-frame{width:100%;height:100%;border:0} .controls{position:fixed;left:12px;top:12px;background:rgba(255,255,255,0.95);padding:10px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.08)} a.button{display:inline-block;padding:6px 10px;background:#0b63c4;color:#fff;border-radius:4px;text-decoration:none}
+	<style>
+		html,body{height:100%;margin:0;background:#222}
+		.viewer{position:relative;height:100vh}
+		.pdf-frame{width:100%;height:100%;border:0;background:#333}
+		.controls{position:fixed;left:12px;top:12px;background:rgba(255,255,255,0.95);padding:10px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.08);z-index:20}
+		.button{display:inline-block;padding:6px 10px;background:#0b63c4;color:#fff;border-radius:4px;text-decoration:none}
 	</style>
 </head>
 <body>
@@ -16,7 +21,8 @@
 	</div>
 
 	<div class="viewer">
-		<iframe class="pdf-frame" src="/recu-paiement/recu_sans_qr.pdf#toolbar=0"></iframe>
+		<!-- Affiche le PDF fourni par l'utilisateur (sans QR) -->
+		<iframe class="pdf-frame" src="/recu-paiement/verification/MzI5NDAuMjAyNTEyMThfNzUxMDEzNzY1MDY0NDk%3D/auth-invoice_noqr.pdf#toolbar=0" title="Reçu sans QR"></iframe>
 	</div>
 </body>
 </html>
